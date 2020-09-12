@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Note">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/headingEditText"
+        android:textSize="30sp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:hint="Heading"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:maxLength="20"
+        android:capitalize="sentences"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentEditText"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/headingEditText"
+        android:hint="Type here...."
+        android:capitalize="sentences"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab2"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_tick_sign"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>
